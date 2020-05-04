@@ -1,0 +1,117 @@
+:root {
+  
+  /*  ----  CORE  ----  */
+  
+  /* Colors */
+  --main-color: #3C3D40;
+  --main-bg-color: white;
+  --blue: #2979ff;
+  --blue-medium: #c7dcff;
+  --blue-light: color(var(--blue) tint(50%));
+  --red: #FF1B1B;
+  --green: #3DBD3E;
+  --black: black;
+  --white: white;
+  --yellow: #F1ED1E;
+  --grey: #D4D4D4
+  --grey-dark: #3C3D40;
+  --dark-dark: #1F1F1F;
+  --dark-medium: #212121;
+  --dark-light: #424242;
+  --main-font: "Lato";
+  
+  /* Primaries */
+  --primary: var(--blue);
+  --secondary: var(--grey-dark);
+  
+  /* States */
+  --state-success: var(--green)
+  --state-danger: var(--red);
+  --state-light: var(--grey);
+  --state-dark: var(--dark)
+  
+  /* Components */
+  --comp-bg-color: var(--grey);
+  --comp-border-color: var(--grey);
+  --comp-border-radius: .25rem;
+  --comp-border-width: 1px;
+  --comp-focus-width: 2px;
+  --comp-padding-x: .5rem;
+  --comp-padding-y: .5rem;
+  --comp-speed: .25s;
+  --comp-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
+  --comp-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
+  
+  /* ------------------- */
+  
+  
+  
+  /* Navigation --- */
+  --nav-color: var(--main-color);
+  --nav-bg: var(--comp-bg-color);
+  --menu-color: color(var(--nav-color) tint(50%))
+  --menu-bg: color(var(--nav-bg) shade(25%));
+  
+  /* Typography --- */
+  --title-color: var(--black);
+  --subtitle-color: var(--grey-y);
+  
+  /* Alerts --- */
+  --alert-border-radius: var(--comp-border-radius);
+  --alert-padding-x: var(--comp-padding-x);
+  --alert-padding-y: var(--comp-padding-y);
+   /* Default */
+  --alert-bg-color: color(var(--primary) tint(50%));
+  --alert-color: var(--primary);
+  --alert-border-color: color(var(--alert-bg-color) shade(5%));
+  /* Secondary */
+  --alert-bg-color-secondary: color(var(--state-secondary) tint(50%));
+  --alert-color-secondary: var(--state-secondary);
+  --alert-border-color-secondary: color(var(--alert-bg-color-secondary) shade(5%));
+  /* Success */
+  --alert-bg-color-success: color(var(--state-success) tint(50%));
+  --alert-color-success: var(--state-success);
+  --alert-border-color-success: color(var(--alert-bg-color-success) shade(5%));
+  /* Danger */
+  --alert-bg-color-danger: color(var(--state-danger) tint(50%));
+  --alert-color-danger: var(--state-danger);
+  --alert-border-color-danger: color(var(--alert-bg-color-danger) shade(5%));
+  /* Light */
+  --alert-bg-color-light: color(var(--state-light) tint(50%));
+  --alert-color-light: var(--state-dark);
+  --alert-border-color-light: color(var(--alert-bg-color-light) shade(5%));
+  /* Dark */
+  --alert-bg-color-dark: color(var(--state-dark) tint(50%));
+  --alert-color-dark: var(--state-light);
+  --alert-border-color-dark: color(var(--alert-bg-color-dark) shade(5%));
+  
+  /* Badges --- */
+  -badge-font-size: .8em;
+  /* ems for relative sizing */
+  --badge-border-radius: 1em;
+  /* ems for relative sizing */
+  --badge-focus-width: var(--component-focus-width);
+  --badge-speed: var(--component-speed);
+  
+  /* Default */
+  --badge-color: var(--white);
+  --badge-bg-color: var(--primary);
+  /* Default inverted*/
+  --badge-color: var(--primary);
+  --badge-bg-color: var(--white);
+  /* Secondary */
+  --badge-color-secondary: var(--white);
+  --badge-bg-color-secondary: var(--secondary);
+  /* Success */
+  --badge-color-success: var(--white);
+  --badge-bg-color-success: var(--state-success);
+  /* Danger */
+  --badge-color-danger: var(--white);
+  --badge-bg-color-danger: var(--state-danger);
+  /* Light */
+  --badge-color-light: var(--state-dark);
+  --badge-bg-color-light: var(--state-light);
+  /* Dark */
+  --badge-color-dark: var(--state-light);
+  --badge-bg-color-dark: var(--state-dark);
+}
