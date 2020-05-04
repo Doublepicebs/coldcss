@@ -2,6 +2,12 @@
   
   /*  ----  CORE  ----  */
   
+  /* Fonts */
+  --font-sans-serif: sans-serif;
+  --font-serif: serif;
+  --font-system: system-ui;
+  --font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  
   /* Colors */
   --main-color: #3C3D40;
   --main-bg-color: white;
@@ -65,8 +71,8 @@
   --alert-color: var(--primary);
   --alert-border-color: color(var(--alert-bg-color) shade(5%));
   /* Secondary */
-  --alert-bg-color-secondary: color(var(--state-secondary) tint(50%));
-  --alert-color-secondary: var(--state-secondary);
+  --alert-bg-color-secondary: color(var(--secondary) tint(50%));
+  --alert-color-secondary: var(--secondary);
   --alert-border-color-secondary: color(var(--alert-bg-color-secondary) shade(5%));
   /* Success */
   --alert-bg-color-success: color(var(--state-success) tint(50%));
@@ -174,8 +180,8 @@
 
   --code-font-size: 90%;
   --code-color: var(--black);
-  --code-border-radius: var(--component-border-radius);
-  --code-bg-color: var(--component-bg-color);
+  --code-border-radius: var(--comp-border-radius);
+  --code-bg-color: var(--comp-bg-color);
   --code-padding-x: calc(var(--font-size) * .4);
   --code-padding-y: calc(var(--font-size) * .2);
 
@@ -192,18 +198,18 @@
   --headings-font-size-h6: 1rem;
 
   --hr-border-width: 1px;
-  --hr-border-color: var(--component-border-color);
+  --hr-border-color: var(--comp-border-color);
   --hr-margin-x: 0;
   --hr-margin-y: 2rem;
 
   --kbd-font-size: 90%;
   --kbd-color: var(--white);
-  --kbd-border-radius: var(--component-border-radius);
+  --kbd-border-radius: var(--comp-border-radius);
   --kbd-bg-color: var(--black);
   --kbd-padding-x: calc(var(--font-size) * .4);
   --kbd-padding-y: calc(var(--font-size) * .2);
 
-  --link-color: var(--state-primary);
+  --link-color: var(--primary);
   --link-text-decoration: none;
   --link-color-hover: var(--link-color);
   --link-text-decoration-hover: underline;
@@ -216,11 +222,62 @@
   --placeholder-color: var(--body-color-muted);
 
   --pre-color: var(--code-color);
-  --pre-border-radius: var(--component-border-radius);
+  --pre-border-radius: var(--comp-border-radius);
   --pre-bg-color: var(--code-bg-color);
   --pre-max-height: none;
 
   --selection-color: var(--white);
-  --selection-bg-color: var(--state-primary);
+  --selection-bg-color: var(--primary);
   
+  /* Input --- */
+  --input-height-xs: 1.25rem;
+  --input-height-sm: 1.75rem;
+  --input-height: 2.25rem;
+  --input-height-lg: 2.75rem;
+  --input-height-xl: 3.25rem;
+  --input-font-size-xs: .625rem;
+  --input-font-size-sm: .875rem;
+  --input-font-size: 1rem;
+  --input-font-size-lg: 1.25rem;
+  --input-font-size-xl: 1.5rem;
+  --input-font-family: inherit;
+  --input-font-weight: inherit;
+  --input-color: var(--body-color);
+  --input-border-color: var(--comp-border-color);
+  --input-border-width: 1px;
+  --input-border-radius: var(--comp-border-radius);
+  --input-bg-color: var(--white);
+  --input-box-shadow: var(--comp-box-shadow-inner);
+  --input-readonly-bg-color: var(--comp-bg-color);
+  --input-focus-color: var(--primary);
+  --input-speed: var(--comp-speed);
+
+  --input-addon-bg-color: var(--comp-bg-color);
+  --input-addon-color: var(--body-color-muted);
+
+  --input-hint-color: var(--body-color-muted);
+  --input-hint-font-size: var(--font-size-small);
+
+  --input-icon-width: 2em;
+  --input-icon-offset: .5em;
+  --input-icon-color: var(--secondary);
+
+  --input-range-track-height: .5rem;
+  --input-range-track-color: var(--comp-bg-color);
+  --input-range-track-box-shadow: var(--comp-box-shadow-inner);
+  --input-range-thumb-height: 1.25rem;
+  --input-range-thumb-color: var(--primary);
+
+  --input-invalid-color: var(--state-danger);
+  --input-invalid-border-color: var(--state-danger);
+  --input-valid-color: var(--state-success);
+  --input-valid-border-color: var(--state-success);
+
+  --fieldset-border-color: var(--comp-border-color);
+  --fieldset-border-width: var(--comp-border-width);
+  --fieldset-border-radius: var(--comp-border-radius);
+  --fieldset-padding-x: 2rem;
+  --fieldset-padding-y: 1.5rem;
+
+  --label-color: inherit;
 }
