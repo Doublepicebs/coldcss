@@ -1029,6 +1029,98 @@ input[type="range"]:focus {
   .input-valid .input-icon :first-child:not(input, select), .input-valid .input-icon :last-child:not(input, select) {
     color: var(--input-invalid-color);
   }
+  
+  
+  /* === Loader === */
+  
+  .loader {
+  width: var(--loader-size);
+  height: var(--loader-size);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: var(--loader-thickness);
+  border-color: var(--loader-bg-color);
+  border-top-color: var(--loader-color);
+  border-left-color: var(--loader-color);
+  display: inline-block;
+  animation: loader var(--loader-speed) linear infinite;
+  margin: var(--loader-margin-y) var(--loader-margin-x);
+  vertical-align: middle;
+  }
+  
+  /* Sizes */
+  .loader.loader-xs {
+    width: var(--loader-size-xs);
+    height: var(--loader-size-xs);
+    border-width: var(--loader-thickness-xs);
+  }
+
+  .loader.loader-sm {
+    width: var(--loader-size-sm);
+    height: var(--loader-size-sm);
+    border-width: var(--loader-thickness-sm);
+  }
+
+  .loader.loader-lg {
+    width: var(--loader-size-lg);
+    height: var(--loader-size-lg);
+    border-width: var(--loader-thickness-lg);
+  }
+
+  .loader.loader-xl {
+    width: var(--loader-size-xl);
+    height: var(--loader-size-xl);
+    border-width: var(--loader-thickness-xl);
+  }
+
+  /* Variations */
+  .loader.loader-secondary {
+    border-color: var(--loader-bg-color-secondary);
+    border-top-color: var(--loader-color-secondary);
+    border-left-color: var(--loader-color-secondary);
+  }
+
+  .loader.loader-success {
+    border-color: var(--loader-bg-color-success);
+    border-top-color: var(--loader-color-success);
+    border-left-color: var(--loader-color-success);
+  }
+
+  .loader.loader-info {
+    border-color: var(--loader-bg-color-info);
+    border-top-color: var(--loader-color-info);
+    border-left-color: var(--loader-color-info);
+  }
+
+  .loader.loader-warning {
+    border-color: var(--loader-bg-color-warning);
+    border-top-color: var(--loader-color-warning);
+    border-left-color: var(--loader-color-warning);
+  }
+
+  .loader.loader-danger {
+    border-color: var(--loader-bg-color-danger);
+    border-top-color: var(--loader-color-danger);
+    border-left-color: var(--loader-color-danger);
+  }
+
+  .loader.loader-light {
+    border-color: var(--loader-bg-color-light);
+    border-top-color: var(--loader-color-light);
+    border-left-color: var(--loader-color-light);
+  }
+
+  .loader.loader-dark {
+    border-color: var(--loader-bg-color-dark);
+    border-top-color: var(--loader-color-dark);
+    border-left-color: var(--loader-color-dark);
+  }
+  
+  @keyframes loader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 /* =========
   GRID SYSTEM (by simplegrid.io)
