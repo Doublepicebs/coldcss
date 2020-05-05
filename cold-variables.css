@@ -16,28 +16,47 @@
   --main-bg-color: white;
   --blue: #2979ff;
   --blue-medium: #c7dcff;
-  --blue-light: color(var(--blue) tint(50%));
+  --blue-light: #BBD5FF;
   --red: #FF1B1B;
+  --red-medium: #FF5858;
+  --red-light: #FFA4A4;
+  --red-dark: #C90000;
   --green: #3DBD3E;
+  --green-medium: #77D378;
+  --green-light: #9BE19C;
+  --green-dark: #2A9D2A;
   --black: black;
   --white: white;
   --yellow: #F1ED1E;
-  --grey: #D4D4D4
-  --grey-dark: #3C3D40;
-  --dark-dark: #1F1F1F;
+  --grey: #D4D4D4;
+  --grey-medium: #e0e0e0;
+  --grey-dark: ##3C3D40;
+  --dark: #1F1F1F;
   --dark-medium: #212121;
   --dark-light: #424242;
   --main-font: "Lato";
   
   /* Primaries */
   --primary: var(--blue);
+  --primary-light: var(--blue-light);
   --secondary: var(--grey-dark);
+  --secondary-light: var(--grey);
   
   /* States */
-  --state-success: var(--green)
+  --state-success: var(--green);
+  --state-success-light: var(--green-light);
+  --state-success-medium: var(--green-medium);
+  --state-success-dark: var(--green-dark);
   --state-danger: var(--red);
+  --state-danger-light: var(--red-light);
+  --state-danger-medium: var(--red-medium);
+  --state-danger-dark: var(--red-dark);
   --state-light: var(--grey);
-  --state-dark: var(--dark)
+  --state-light-medium: var(--grey-medium);
+  --state-light-dark: var(--grey-dark);
+  --state-dark: var(--dark);
+  --state-dark-light: var(--dark-light);
+  --state-dark-medium: var(--dark-medium);
   
   /* Components */
   --comp-bg-color: var(--grey);
@@ -58,8 +77,8 @@
   /* Navigation --- */
   --nav-color: var(--main-color);
   --nav-bg: var(--comp-bg-color);
-  --menu-color: color(var(--nav-color) tint(50%))
-  --menu-bg: color(var(--nav-bg) shade(25%));
+  --menu-color: var(--main-color);
+  --menu-bg: var(--light);
   
   /* Typography --- */
   --title-color: var(--black);
@@ -70,29 +89,29 @@
   --alert-padding-x: var(--comp-padding-x);
   --alert-padding-y: var(--comp-padding-y);
    /* Default */
-  --alert-bg-color: color(var(--primary) tint(50%));
+  --alert-bg-color: var(--primary-light);
   --alert-color: var(--primary);
-  --alert-border-color: color(var(--alert-bg-color) shade(5%));
+  --alert-border-color: var(--primary);
   /* Secondary */
-  --alert-bg-color-secondary: color(var(--secondary) tint(50%));
+  --alert-bg-color-secondary: var(--secondary-light);
   --alert-color-secondary: var(--secondary);
-  --alert-border-color-secondary: color(var(--alert-bg-color-secondary) shade(5%));
+  --alert-border-color-secondary: var(--secondary);
   /* Success */
-  --alert-bg-color-success: color(var(--state-success) tint(50%));
+  --alert-bg-color-success: var(--state-success-light);
   --alert-color-success: var(--state-success);
-  --alert-border-color-success: color(var(--alert-bg-color-success) shade(5%));
+  --alert-border-color-success: var(--state-success);
   /* Danger */
-  --alert-bg-color-danger: color(var(--state-danger) tint(50%));
+  --alert-bg-color-danger: var(--state-danger-light);
   --alert-color-danger: var(--state-danger);
-  --alert-border-color-danger: color(var(--alert-bg-color-danger) shade(5%));
+  --alert-border-color-danger: var(--state-danger);
   /* Light */
-  --alert-bg-color-light: color(var(--state-light) tint(50%));
+  --alert-bg-color-light: var(--state-light);
   --alert-color-light: var(--state-dark);
-  --alert-border-color-light: color(var(--alert-bg-color-light) shade(5%));
+  --alert-border-color-light: var(--state-dark);
   /* Dark */
-  --alert-bg-color-dark: color(var(--state-dark) tint(50%));
+  --alert-bg-color-dark: var(--state-dark-medium);
   --alert-color-dark: var(--state-light);
-  --alert-border-color-dark: color(var(--alert-bg-color-dark) shade(5%));
+  --alert-border-color-dark: var(--state-light);
   
   /* Badges --- */
   -badge-font-size: .8em;
@@ -162,11 +181,11 @@
 
   /* Light */
   --button-color-light: var(--state-dark);
-  --button-bg-color-light: color(var(--state-light) shade(10%));
+  --button-bg-color-light: var(--state-light-medium);
 
   /* Dark */
   --button-color-dark: var(--state-light);
-  --button-bg-color-dark: color(var(--state-dark) tint(10%));
+  --button-bg-color-dark: var(--state-dark);
   
   /* Content --- */
   --body-bg-color: var(--white);
@@ -214,8 +233,9 @@
 
   --link-color: var(--primary);
   --link-text-decoration: none;
-  --link-color-hover: color(var(--link-color) shade(30%));
-  --link-text-decoration-hover: underline;
+  --link-color-hover: var(--primary-dark);
+  --link-text-decoration-hover: none;
+  --link-color-transition-speed: 0s;
 
   --mark-color: inherit;
   --mark-bg-color: var(--color-yellow);
@@ -336,12 +356,12 @@
   --switch-bg-color-danger: var(--comp-border-color);
   --switch-thumb-color-danger: var(--white);
   /* Light */
-  --switch-color-light: color(var(--state-light) shade(25%));
-  --switch-bg-color-light: color(var(--state-light) shade(10%));
+  --switch-color-light: var(--state-light-medium);
+  --switch-bg-color-light: var(--state-light-dark);
   --switch-thumb-color-light: var(--white);
   /* Dark */
-  --switch-color-dark: color(var(--state-dark) tint(10%));
-  --switch-bg-color-dark: color(var(--state-dark) tint(25%));
+  --switch-color-dark: var(--state-dark-medium);
+  --switch-bg-color-dark: var(--state-dark-light);
   --switch-thumb-color-dark: var(--white);
   
   /* Spacings and Breakpoints --- */

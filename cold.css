@@ -101,63 +101,62 @@
 
 a.badge:hover {
     color: var(--badge-color);
-    background-color: color(var(--badge-bg-color) shade(10%));
+    background-color: var(--badge-bg-color) ;
     text-decoration: none;
   }
 
   a.badge:focus {
     outline: none;
-    box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color) alpha(50%));
+    box-shadow: 0 0 0 var(--badge-focus-width) var(--badge-bg-color) ;
   }
 
     a.badge.badge-secondary:hover {
       color: var(--badge-color-secondary);
-      background-color: color(var(--badge-bg-color-secondary) shade(10%));
+      background-color: var(--badge-bg-color-secondary);
     }
 
     a.badge.badge-secondary:focus {
-      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-secondary) alpha(50%));
+      box-shadow: 0 0 0 var(--badge-focus-width) var(--badge-bg-color-secondary);
     }
 
     a.badge.badge-success:hover {
       color: var(--badge-color-success);
-      background-color: color(var(--badge-bg-color-success) shade(10%));
+      background-color: var(--badge-bg-color-success);
     }
 
     a.badge.badge-success:focus {
-      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-success) alpha(50%));
+      box-shadow: 0 0 0 var(--badge-focus-width) var(--badge-bg-color-success);
   }
 
     a.badge.badge-danger:hover {
       color: var(--badge-color-danger);
-      background-color: color(var(--badge-bg-color-danger) shade(10%));
+      background-color: var(--badge-bg-color-danger);
     }
 
     a.badge.badge-danger:focus {
-      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-danger) alpha(50%));
+      box-shadow: 0 0 0 var(--badge-focus-width) var(--badge-bg-color-danger);
     }
 
     a.badge.badge-light:hover {
       color: var(--badge-color-light);
-      background-color: color(var(--badge-bg-color-light) shade(10%));
+      background-color: var(--badge-bg-color-light);
     }
 
     a.badge.badge-light:focus {
-      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-light) alpha(50%));
+      box-shadow: 0 0 0 var(--badge-focus-width) var(--badge-bg-color-light);
     }
 
     a.badge.badge-dark:hover {
       color: var(--badge-color-dark);
-      background-color: color(var(--badge-bg-color-dark) tint(10%));
+      background-color: var(--badge-bg-color-dark);
     }
 
     a.badge.badge-dark:focus {
-      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-dark) alpha(50%));
+      box-shadow: 0 0 0 var(--badge-focus-width) var(--badge-bg-color-dark);
     }
     
     
-    
-    /* === Buttons === */
+/* === Buttons === */
     
 .button {
   font-family: var(--button-font-family);
@@ -171,8 +170,8 @@ a.badge:hover {
   border-style: solid;
   border-width: var(--button-border-width);
   border-color: var(--button-bg-color);
-  border-top-color: color(var(--button-bg-color) tint(10%));
-  border-bottom-color: color(var(--button-bg-color) shade(10%));
+  border-top-color: var(--button-bg-color);
+  border-bottom-color: var(--button-bg-color);
   height: var(--button-height);
   line-height: calc(var(--button-height) - var(--button-border-width) * 2);
   user-select: none;
@@ -187,30 +186,30 @@ a.badge:hover {
 .button:hover {
     color: var(--button-color);
     text-decoration: none;
-    background-color: color(var(--button-bg-color) shade(10%));
-    border-color: color(var(--button-bg-color) shade(10%));
-    border-top-color: color(var(--button-bg-color) tint(0%));
-    border-bottom-color: color(var(--button-bg-color) shade(20%));
+    background-color: var(--button-bg-color);
+    border-color: var(--button-bg-color);
+    border-top-color: var(--button-bg-color);
+    border-bottom-color: var(--button-bg-color);
   }
 
   .button:active,
   .button.active {
-    background-color: color(var(--button-bg-color) shade(10%));
-    border-color: color(var(--button-bg-color) shade(10%));
-    border-top-color: color(var(--button-bg-color) shade(20%));
-    border-bottom-color: color(var(--button-bg-color) shade(10%));
+    background-color: var(--button-bg-color);
+    border-color: var(--button-bg-color);
+    border-top-color: var(--button-bg-color);
+    border-bottom-color: var(--button-bg-color);
   }
 
   .button:focus {
     outline: none;
-    box-shadow: 0 0 0 var(--button-focus-width) color(var(--button-bg-color) alpha(50%));
+    box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color);
   }
 
   .button:disabled,
   .button.disabled {
-    background-color: color(var(--button-bg-color) shade(10%));
-    border-top-color: color(var(--button-bg-color) tint(10%));
-    border-bottom-color: color(var(--button-bg-color) shade(10%));
+    background-color: var(--button-bg-color);
+    border-top-color: var(--button-bg-color);
+    border-bottom-color: var(--button-bg-color);
     box-shadow: none;
     text-decoration: none;
     opacity: .5;
@@ -246,36 +245,36 @@ a.badge:hover {
     color: var(--button-color-secondary);
     background-color: var(--button-bg-color-secondary);
     border-color: var(--button-bg-color-secondary);
-    border-top-color: color(var(--button-bg-color-secondary) tint(10%));
-    border-bottom-color: color(var(--button-bg-color-secondary) shade(10%));
+    border-top-color: var(--button-bg-color-secondary);
+    border-bottom-color: var(--button-bg-color-secondary);
 }
 
     .button.button-secondary:hover {
       color: var(--button-color-secondary);
-      background-color: color(var(--button-bg-color-secondary) shade(10%));
-      border-color: color(var(--button-bg-color-secondary) shade(10%));
-      border-top-color: color(var(--button-bg-color-secondary) tint(0%));
-      border-bottom-color: color(var(--button-bg-color-secondary) shade(20%));
+      background-color: var(--button-bg-color-secondary);
+      border-color: var(--button-bg-color-secondary);
+      border-top-color: var(--button-bg-color-secondary);
+      border-bottom-color: var(--button-bg-color-secondary);
     }
 
     .button.button-secondary:active,
     .button.button-secondary.active {
-      background-color: color(var(--button-bg-color-secondary) shade(10%));
-      border-color: color(var(--button-bg-color-secondary) shade(10%));
-      border-top-color: color(var(--button-bg-color-secondary) shade(20%));
-      border-bottom-color: color(var(--button-bg-color-secondary) shade(10%));
+      background-color: var(--button-bg-color-secondary);
+      border-color: var(--button-bg-color-secondary);
+      border-top-color: var(--button-bg-color-secondary);
+      border-bottom-color: var(--button-bg-color-secondary);
     }
 
     .button.button-secondary:focus {
       outline: none;
-      box-shadow: 0 0 0 var(--button-focus-width) color(var(--button-bg-color-secondary) alpha(50%));
+      box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color-secondary);
     }
 
     .button.button-secondary:disabled,
     .button.button-secondary.disabled {
-      background-color: color(var(--button-bg-color-secondary) shade(10%));
-      border-top-color: color(var(--button-bg-color-secondary) tint(10%));
-      border-bottom-color: color(var(--button-bg-color-secondary) shade(10%));
+      background-color: var(--button-bg-color-secondary);
+      border-top-color: var(--button-bg-color-secondary);
+      border-bottom-color: var(--button-bg-color-secondary);
       box-shadow: none;
     }
     
@@ -283,36 +282,36 @@ a.badge:hover {
     color: var(--button-color-success);
     background-color: var(--button-bg-color-success);
     border-color: var(--button-bg-color-success);
-    border-top-color: color(var(--button-bg-color-success) tint(10%));
-    border-bottom-color: color(var(--button-bg-color-success) shade(10%));
+    border-top-color: var(--button-bg-color-success);
+    border-bottom-color: var(--button-bg-color-success);
  }
  
  .button.button-sucess:hover {
       color: var(--button-color-success);
-      background-color: color(var(--button-bg-color-success) shade(10%));
-      border-color: color(var(--button-bg-color-success) shade(10%));
-      border-top-color: color(var(--button-bg-color-success) tint(0%));
-      border-bottom-color: color(var(--button-bg-color-success) shade(20%));
+      background-color: var(--button-bg-color-success);
+      border-color: var(--button-bg-color-success);
+      border-top-color: var(--button-bg-color-success);
+      border-bottom-color: var(--button-bg-color-success);
     }
 
     .button.button-sucess:active,
     .button.button-sucess.active {
-      background-color: color(var(--button-bg-color-success) shade(10%));
-      border-color: color(var(--button-bg-color-success) shade(10%));
-      border-top-color: color(var(--button-bg-color-success) shade(20%));
-      border-bottom-color: color(var(--button-bg-color-success) shade(10%));
+      background-color: var(--button-bg-color-success);
+      border-color: var(--button-bg-color-success);
+      border-top-color: var(--button-bg-color-success);
+      border-bottom-color: var(--button-bg-color-success);
     }
 
     .button.button-sucess:focus {
       outline: none;
-      box-shadow: 0 0 0 var(--button-focus-width) color(var(--button-bg-color-success) alpha(50%));
+      box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color-success);
     }
 
     .button.button-sucess:disabled,
     .button.button-sucess.disabled {
-      background-color: color(var(--button-bg-color-success) shade(10%));
-      border-top-color: color(var(--button-bg-color-success) tint(10%));
-      border-bottom-color: color(var(--button-bg-color-success) shade(10%));
+      background-color: var(--button-bg-color-success);
+      border-top-color: var(--button-bg-color-success);
+      border-bottom-color: var(--button-bg-color-success);
       box-shadow: none;
     }
   
@@ -320,36 +319,36 @@ a.badge:hover {
     color: var(--button-color-danger);
     background-color: var(--button-bg-color-danger);
     border-color: var(--button-bg-color-danger);
-    border-top-color: color(var(--button-bg-color-danger) tint(10%));
-    border-bottom-color: color(var(--button-bg-color-danger) shade(10%));
+    border-top-color: var(--button-bg-color-danger);
+    border-bottom-color: var(--button-bg-color-danger);
   }
   
   .button.button-danger:hover {
       color: var(--button-color-danger);
-      background-color: color(var(--button-bg-color-danger) shade(10%));
-      border-color: color(var(--button-bg-color-danger) shade(10%));
-      border-top-color: color(var(--button-bg-color-danger) tint(0%));
-      border-bottom-color: color(var(--button-bg-color-danger) shade(20%));
+      background-color: var(--button-bg-color-danger);
+      border-color: var(--button-bg-color-danger);
+      border-top-color: var(--button-bg-color-danger);
+      border-bottom-color: var(--button-bg-color-danger);
     }
 
     .button.button-danger:active,
     .button.button-danger.active {
-      background-color: color(var(--button-bg-color-danger) shade(10%));
-      border-color: color(var(--button-bg-color-danger) shade(10%));
-      border-top-color: color(var(--button-bg-color-danger) shade(20%));
-      border-bottom-color: color(var(--button-bg-color-danger) shade(10%));
+      background-color: var(--button-bg-color-danger);
+      border-color: var(--button-bg-color-danger);
+      border-top-color: var(--button-bg-color-danger);
+      border-bottom-color: var(--button-bg-color-danger);
     }
 
     .button.button-danger:focus {
       outline: none;
-      box-shadow: 0 0 0 var(--button-focus-width) color(var(--button-bg-color-danger) alpha(50%));
+      box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color-danger);
     }
 
     .button.button-danger:disabled,
     .button.button-danger.disabled {
-      background-color: color(var(--button-bg-color-danger) shade(10%));
-      border-top-color: color(var(--button-bg-color-danger) tint(10%));
-      border-bottom-color: color(var(--button-bg-color-danger) shade(10%));
+      background-color: var(--button-bg-color-danger);
+      border-top-color: var(--button-bg-color-danger);
+      border-bottom-color: var(--button-bg-color-danger);
       box-shadow: none;
     }
     
@@ -357,36 +356,36 @@ a.badge:hover {
     color: var(--button-color-light);
     background-color: var(--button-bg-color-light);
     border-color: var(--button-bg-color-light);
-    border-top-color: color(var(--button-bg-color-light) tint(10%));
-    border-bottom-color: color(var(--button-bg-color-light) shade(10%));
+    border-top-color: var(--button-bg-color-light);
+    border-bottom-color: var(--button-bg-color-light);
     }
     
     .button.button-light:hover {
       color: var(--button-color-light);
-      background-color: color(var(--button-bg-color-light) shade(10%));
-      border-color: color(var(--button-bg-color-light) shade(10%));
-      border-top-color: color(var(--button-bg-color-light) tint(0%));
-      border-bottom-color: color(var(--button-bg-color-light) shade(20%));
+      background-color: var(--button-bg-color-light);
+      border-color: var(--button-bg-color-light);
+      border-top-color: var(--button-bg-color-light);
+      border-bottom-color: var(--button-bg-color-light);
     }
 
     .button.button-light:active,
     .button.button-light.active {
-      background-color: color(var(--button-bg-color-light) shade(10%));
-      border-color: color(var(--button-bg-color-light) shade(10%));
-      border-top-color: color(var(--button-bg-color-light) shade(20%));
-      border-bottom-color: color(var(--button-bg-color-light) shade(10%));
+      background-color: var(--button-bg-color-light);
+      border-color: var(--button-bg-color-light);
+      border-top-color: var(--button-bg-color-light);
+      border-bottom-color: var(--button-bg-color-light);
     }
 
     .button.button-light:focus {
       outline: none;
-      box-shadow: 0 0 0 var(--button-focus-width) color(var(--button-bg-color-light) alpha(50%));
+      box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color-light);
     }
 
     .button.button-light:disabled,
     .button.button-light.disabled {
-      background-color: color(var(--button-bg-color-light) shade(10%));
-      border-top-color: color(var(--button-bg-color-light) tint(10%));
-      border-bottom-color: color(var(--button-bg-color-light) shade(10%));
+      background-color: var(--button-bg-color-light);
+      border-top-color: var(--button-bg-color-light);
+      border-bottom-color: var(--button-bg-color-light);
       box-shadow: none;
     }
     
@@ -394,36 +393,36 @@ a.badge:hover {
     color: var(--button-color-dark);
     background-color: var(--button-bg-color-dark);
     border-color: var(--button-bg-color-dark);
-    border-top-color: color(var(--button-bg-color-dark) tint(10%));
-    border-bottom-color: color(var(--button-bg-color-dark) shade(10%));
+    border-top-color: var(--button-bg-color-dark);
+    border-bottom-color: var(--button-bg-color-dark);
     }
     
     .button.button-dark:hover {
       color: var(--button-color-dark);
-      background-color: color(var(--button-bg-color-dark) shade(10%));
-      border-color: color(var(--button-bg-color-dark) shade(10%));
-      border-top-color: color(var(--button-bg-color-dark) tint(0%));
-      border-bottom-color: color(var(--button-bg-color-dark) shade(20%));
+      background-color: var(--button-bg-color-dark);
+      border-color: var(--button-bg-color-dark);
+      border-top-color: var(--button-bg-color-dark);
+      border-bottom-color: var(--button-bg-color-dark);
     }
 
     .button.button-dark:active,
     .button.button-dark.active {
-      background-color: color(var(--button-bg-color-dark) shade(10%));
-      border-color: color(var(--button-bg-color-dark) shade(10%));
-      border-top-color: color(var(--button-bg-color-dark) shade(20%));
-      border-bottom-color: color(var(--button-bg-color-dark) shade(10%));
+      background-color: var(--button-bg-color-dark);
+      border-color: var(--button-bg-color-dark);
+      border-top-color: var(--button-bg-color-dark);
+      border-bottom-color: var(--button-bg-color-dark);
     }
 
     .button.button-dark:focus {
       outline: none;
-      box-shadow: 0 0 0 var(--button-focus-width) color(var(--button-bg-color-dark) alpha(50%));
+      box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color-dark);
     }
 
     .button.button-dark:disabled,
     .button.button-dark.disabled {
-      background-color: color(var(--button-bg-color-dark) shade(10%));
-      border-top-color: color(var(--button-bg-color-dark) tint(10%));
-      border-bottom-color: color(var(--button-bg-color-dark) shade(10%));
+      background-color: var(--button-bg-color-dark);
+      border-top-color: var(--button-bg-color-dark);
+      border-bottom-color: var(--button-bg-color-dark);
       box-shadow: none;
     }
     
@@ -468,7 +467,7 @@ a.badge:hover {
   width: var(--button-loader-size);
   height: var(--button-loader-size);
   border-radius: 50%;
-  border: solid var(--button-loader-border-width) color(var(--button-color) alpha(20%));
+  border: solid var(--button-loader-border-width) var(--button-color) alpha(20%);
   border-top-color: var(--button-color);
   border-left-color: var(--button-color);
   display: inline-block;
@@ -476,31 +475,31 @@ a.badge:hover {
 }
 
 .button-secondary.button-loader::after {
-  border-color: color(var(--button-color-secondary) alpha(20%));
+  border-color: var(--button-color-secondary);
   border-top-color: var(--button-color-secondary);
   border-left-color: var(--button-color-secondary);
 }
 
 .button-success.button-loader::after {
-  border-color: color(var(--button-color-success) alpha(20%));
+  border-color: var(--button-color-success) ;
   border-top-color: var(--button-color-success);
   border-left-color: var(--button-color-success);
 }
 
 .button-danger.button-loader::after {
-  border-color: color(var(--button-color-danger) alpha(20%));
+  border-color: var(--button-color-danger) ;
   border-top-color: var(--button-color-danger);
   border-left-color: var(--button-color-danger);
 }
 
 .button-light.button-loader::after {
-  border-color: color(var(--button-color-light) alpha(20%));
+  border-color: var(--button-color-light) ;
   border-top-color: var(--button-color-light);
   border-left-color: var(--button-color-light);
 }
 
 .button-dark.button-loader::after {
-  border-color: color(var(--button-color-dark) alpha(20%));
+  border-color: var(--button-color-dark) ;
   border-top-color: var(--button-color-dark);
   border-left-color: var(--button-color-dark);
 }
@@ -543,6 +542,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration: var(--link-text-decoration);
+  transition : all var(--link-color-transition-speed);
 }
 
 a:hover {
@@ -920,7 +920,7 @@ input[type="range"]:focus {
     }
 
     input[type="range"]:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 var(--comp-focus-width) color(var(--input-range-thumb-color) alpha(50%));
+      box-shadow: 0 0 0 var(--comp-focus-width) var(--input-range-thumb-color);
     }
     
     /* Input fields */
@@ -1295,7 +1295,7 @@ input[type="range"]:focus {
 
     .switch input:focus + label::before {
       outline: none;
-      box-shadow: 0 0 0 var(--switch-focus-width) color(var(--switch-color) alpha(50%));
+      box-shadow: 0 0 0 var(--switch-focus-width) var(--switch-color);
     }
 
     .switch input:disabled + label {
@@ -1500,7 +1500,7 @@ input[type="range"]:focus {
 /* === Utilities === */
 
 /* Text color */
-.text-primary { color: var(--cprimary) !important; }
+.text-primary { color: var(--primary) !important; }
 .text-secondary { color: var(--secondary) !important; }
 .text-success { color: var(--state-success) !important; }
 .text-success { color: var(--state-success) !important; }
@@ -1515,6 +1515,12 @@ input[type="range"]:focus {
 .text-bold { font-weight: var(--font-weight-bold) !important; }
 .text-italic { font-style: italic !important; }
 .text-muted { color: var(--body-color-muted) !important; }
+
+/* Text family */
+.font-serif { font-family: var(--font-serif);}
+.font-sans-serif { font-family: var(--font-sans-serif);}
+.font-monospace { font-family: var(--font-monospace);}
+.font-system{ font-family: var(--font-system);}
 
 /* Text alignment */
 .text-left { text-align: left !important; }
