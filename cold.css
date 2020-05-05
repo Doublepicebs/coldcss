@@ -1,5 +1,163 @@
 
 
+/* === Alerts === */
+
+.alert {
+  color: var(--alert-color);
+  background-color: var(--alert-bg-color);
+  border-color: var(--alert-border-color);
+  border-style: solid;
+  border-width: var(--alert-border-width);
+  border-radius: var(--alert-border-radius);
+  padding: var(--alert-padding-y) var(--alert-padding-x);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.alert:empty {
+    display: none;
+}
+
+.alert a {
+    color: currentcolor;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .alert > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* Variations */
+  .alert.alert-secondary {
+    color: var(--alert-color-secondary);
+    background-color: var(--alert-bg-color-secondary);
+    border-color: var(--alert-border-color-secondary);
+  }
+
+  .alert.alert-success {
+    color: var(--alert-color-success);
+    background-color: var(--alert-bg-color-success);
+    border-color: var(--alert-border-color-success);
+  }
+
+  .alert.alert-danger {
+    color: var(--alert-color-danger);
+    background-color: var(--alert-bg-color-danger);
+    border-color: var(--alert-border-color-danger);
+  }
+
+  .alert.alert-light {
+    color: var(--alert-color-light);
+    background-color: var(--alert-bg-color-light);
+    border-color: var(--alert-border-color-light);
+  }
+
+  .alert.alert-dark {
+    color: var(--alert-color-dark);
+    background-color: var(--alert-bg-color-dark);
+    border-color: var(--alert-border-color-dark);
+  }
+  
+  /* === Badges === */
+  
+  .badge {
+  font-size: var(--badge-font-size);
+  color: var(--badge-color);
+  background-color: var(--badge-bg-color);
+  border-radius: var(--badge-border-radius);
+  padding: .2em .6em;
+  vertical-align: baseline;
+  display: inline-block;
+  transition: var(--badge-speed) all;
+  }
+  
+  .badge:empty {
+    display: none;
+  }
+
+  /* Variations */
+  .badge.badge-secondary {
+    color: var(--badge-color-secondary);
+    background-color: var(--badge-bg-color-secondary);
+  }
+
+  .badge.badge-success {
+    color: var(--badge-color-success);
+    background-color: var(--badge-bg-color-success);
+  }
+
+  .badge.badge-danger {
+    color: var(--badge-color-danger);
+    background-color: var(--badge-bg-color-danger);
+  }
+
+  .badge.badge-light {
+    color: var(--badge-color-light);
+    background-color: var(--badge-bg-color-light);
+  }
+
+  .badge.badge-dark {
+    color: var(--badge-color-dark);
+    background-color: var(--badge-bg-color-dark);
+  }
+
+a.badge:hover {
+    color: var(--badge-color);
+    background-color: color(var(--badge-bg-color) shade(10%));
+    text-decoration: none;
+  }
+
+  a.badge:focus {
+    outline: none;
+    box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color) alpha(50%));
+  }
+
+    a.badge.badge-secondary:hover {
+      color: var(--badge-color-secondary);
+      background-color: color(var(--badge-bg-color-secondary) shade(10%));
+    }
+
+    a.badge.badge-secondary:focus {
+      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-secondary) alpha(50%));
+    }
+
+    a.badge.badge-success:hover {
+      color: var(--badge-color-success);
+      background-color: color(var(--badge-bg-color-success) shade(10%));
+    }
+
+    a.badge.badge-success:focus {
+      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-success) alpha(50%));
+  }
+
+    a.badge.badge-danger:hover {
+      color: var(--badge-color-danger);
+      background-color: color(var(--badge-bg-color-danger) shade(10%));
+    }
+
+    a.badge.badge-danger:focus {
+      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-danger) alpha(50%));
+    }
+
+    a.badge.badge-light:hover {
+      color: var(--badge-color-light);
+      background-color: color(var(--badge-bg-color-light) shade(10%));
+    }
+
+    a.badge.badge-light:focus {
+      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-light) alpha(50%));
+    }
+
+    a.badge.badge-dark:hover {
+      color: var(--badge-color-dark);
+      background-color: color(var(--badge-bg-color-dark) tint(10%));
+    }
+
+    a.badge.badge-dark:focus {
+      box-shadow: 0 0 0 var(--badge-focus-width) color(var(--badge-bg-color-dark) alpha(50%));
+    }
+    
+    
 
 /* =========
   GRID SYSTEM (by simplegrid.io)
