@@ -531,7 +531,7 @@ html {
 /* Basics */
 
 body {
-  background: var(--body-bg-color);
+  background-color: var(--body-bg-color);
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   font-size: var(--font-size);

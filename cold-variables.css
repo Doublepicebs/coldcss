@@ -12,8 +12,6 @@
   --font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
   
   /* Colors */
-  --main-color: #3C3D40;
-  --main-bg-color: white;
   --blue: #2979ff;
   --blue-medium: #c7dcff;
   --blue-light: #BBD5FF;
@@ -188,8 +186,8 @@
   --button-bg-color-dark: var(--state-dark);
   
   /* Content --- */
+  --body-color: #3C3D40;
   --body-bg-color: var(--white);
-  --body-color: var(--black);
   --body-color-muted: var(--gray-medium);
 
   --font-family: var(--font-system);
@@ -211,7 +209,7 @@
   --headings-font-weight: var(--font-weight-light);
   --headings-line-height: 1.1;
   --headings-margin-bottom: .5rem;
-  --headings-color: inherit;
+  --headings-color: var(--black);
   --headings-font-size-h1: 2.5rem;
   --headings-font-size-h2: 2rem;
   --headings-font-size-h3: 1.75rem;
