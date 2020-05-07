@@ -4,14 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" media="all" />
+  <!-- Cold -->
   <link rel="stylesheet" href="cold-variables.css" type="text/css" media="all" />
   <link rel="stylesheet" href="cold.css">
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Basic edits to cold -->
   <style type="text/css" media="all">
     body {
-      --headings-font-family: "Lato", sans-serif;
+      --headings-font-family: "Montserrat", sans-serif;
+      --switch-focus-width: 0;
+      --switch-thumb-spacing: 5px;
       font-family: 'Lato', sans-serif;
+    }
+    .fh {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .bg-dark  svg {
+      color: white;
     }
     .anime-color {
       transition : color .3s;
@@ -24,28 +37,72 @@
 
 <body>
   
-  <h2 class="mar-sm mar-b-xl">Doublepicebs <span class="text-primary">Design</span> System</h2>
+  <header style="--state-light: #eeee;" class="bg-light p-xs">
+
+    <h3 class="hidden-lg hidden-xl hidden-md"><span class="text-bold">D<span class="text-primary">D</span>S</span></h3>
   
-  <div class="mar-xs mar-t-xl"> 
+    <h3 class="p-xs text-bold hidden-sm hidden-xs">Doublepicebs <span class="text-primary">Design</span> System</h3>
+    
+    
+  </header>
   
+  <div class="m-xs m-t-xl"> 
     <h3>What is COLD?</h3>
     <p>
       COLD, stands for <b>C</b>ustomisable, <b>O</b>perating and <b>L</b>eading <b>D</b>esign. It's the Doublepicebs Design System for Web.
     </p>
     
     <p>
-      Although COLD was meant and optimised for internal work, it is available for the public; and thus we wanted it to be highly customisable, using CSS variables, without preprocessors, exactly like Shoelace. (see below)
+      Although COLD was meant and optimised for internal work, it is available for the public; and thus we wanted it to be highly customisable, using CSS variables, without preprocessors, exactly like Shoelace.
     </p>
     
+  </div>
+  
+  <div class="bg-dark text-light text-center p-lg" style="--headings-color: white;">
     
-    <h3>What is COLD based on?</h3>
-    <p>
-      COLD relies <b>heavily</b> on the core ideas of <a href="https://shoelace.style">Shoelace css</a> and even many basic styles and components. COLD works without cssnext, unlike Shoelace. It also ports only the necessary components and styles, with the small version of the Doublepicebs color palette.
-    </p>
+    <h3 class="m-b-lg">Features</h3>
     
-    <p>
+    <!-- Pencil icon -->
+    <svg width="50" height="50" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+      <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+      </svg>
+      <br>
+    <b class="fh">Completely Customisable</b>
+    <br />
+    <p>COLD is meant to be easy, and customisable, with A LOT of css variables (css custom properties). No preprocessors are required.</p>
+    
+    <!-- Cog icon -->
+    <svg width="50" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+      <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+  </svg>
+    <br>
+    <b class="fh">Open source</b>
+    <br />
+    <p>The source is available for free on github, feel free to get it, edit it and use it as you wish.</p>
+    
+    <!-- Computer icon -->
+    <svg width="50" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" fill-rule="evenodd"></path>
+      </svg>
+      <br />
+      <b class="fh">Responsive</b>
+      <br />
+      <p>Our stylesheets are beautiful, responsive and more importantly, mobile first.</p>
+    
+  </div>
+  
+  <div>
+    
+    <div class="bg-black text-light p-lg text-right" style="--headings-color: white;">
+      <h3>What is COLD based on?</h3>
+      <p>
+        COLD relies <b>heavily</b> on the core ideas of <a href="https://shoelace.style">Shoelace css</a> and even many basic styles and components. However, COLD works without cssnext as it was meant for static site development. It also ports only the necessary components and styles, with the small version of the Doublepicebs color palette.
+      </p>
+    
+      <p>
       For the grid system, we use <a href="https://simplegrid.io">Simplegrid</a>.
-    </p>
+      </p>
+    </div>
     
   </div>
   

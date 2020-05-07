@@ -28,7 +28,7 @@
   --yellow: #F1ED1E;
   --grey: #D4D4D4;
   --grey-medium: #e0e0e0;
-  --grey-dark: ##3C3D40;
+  --grey-dark: #3C3D40;
   --dark: #1F1F1F;
   --dark-medium: #212121;
   --dark-light: #424242;
@@ -193,7 +193,7 @@
   --font-family: var(--font-system);
   --font-size: 1rem; /* Most browsers use a default font size of 16px */
   --font-size-small: 80%;
-  --font-weight-light: 300;
+  --font-weight-light: 200;
   --font-weight: 400;
   --font-weight-bold: 700;
   --line-height: 1.5;
