@@ -15,6 +15,7 @@
   --blue: #2979ff;
   --blue-medium: #c7dcff;
   --blue-light: #BBD5FF;
+  --blue-dark: #0041AE;
   --red: #FF1B1B;
   --red-medium: #FF5858;
   --red-light: #FFA4A4;
@@ -37,8 +38,10 @@
   /* Primaries */
   --primary: var(--blue);
   --primary-light: var(--blue-light);
+  --primary-dark: var (--blue-dark);
   --secondary: var(--grey-dark);
   --secondary-light: var(--grey);
+  --secondary-dark: var(--dark-dark);
   
   /* States */
   --state-success: var(--green);
@@ -59,7 +62,7 @@
   /* Components */
   --comp-bg-color: var(--grey);
   --comp-border-color: var(--grey);
-  --comp-border-radius: .25rem;
+  --comp-border-radius: .5rem;
   --comp-border-width: 1px;
   --comp-focus-width: 2px;
   --comp-padding-x: .5rem;
@@ -231,7 +234,7 @@
 
   --link-color: var(--primary);
   --link-text-decoration: none;
-  --link-color-hover: var(--primary-dark);
+  --link-color-hover: var(--primary-light);
   --link-text-decoration-hover: none;
   --link-color-transition-speed: 0s;
 
