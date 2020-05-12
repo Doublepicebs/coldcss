@@ -1516,6 +1516,7 @@ input[type="range"]:focus {
 .text-danger { color: var(--state-danger) !important; }
 .text-light { color: var(--state-light) !important; }
 .text-dark { color: var(--state-dark) !important; }
+.text-white { color: white !important; }
 
 /* Text style */
 .text-small { font-size: var(--font-size-small) !important; }
