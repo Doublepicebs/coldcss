@@ -11,15 +11,23 @@
   <link rel="stylesheet" href="cold-variables.css" type="text/css" media="all" />
   <link rel="stylesheet" href="cold.css">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="fonts/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <!-- Basic edits to cold -->
   <style type="text/css" media="all">
     body {
+      --button-bg-color: var(--primary-light);
+      --button-color: var(--primary);
+      --font-size: 1.1rem;
       --headings-font-family: "Montserrat", sans-serif;
       --switch-focus-width: 0;
       --switch-thumb-spacing: 5px;
-      font-family: 'Lato', sans-serif;
+      font-family: "Marat Sans Regular", sans-serif;
+      letter-spacing: 0.009rem;
+    }
+    
+    .button:not(.secondary) {
+      font-weight: bold;
     }
 
     .fh {
@@ -28,10 +36,6 @@
 
     .bg-dark svg {
       color: white;
-    }
-
-    .anime-color {
-      transition: color .3s;
     }
     
   </style>
@@ -48,11 +52,12 @@
   <div class="m-xs m-t-xl">
     <h3>What is COLD?</h3>
     <p>
-      COLD, stands for <b>C</b>ustomisable, <b>O</b>perating and <b>L</b>eading <b>D</b>esign. It's the Doublepicebs Design System for Web.
+      COLD, stands for <b>C</b>ustomisable, <b>O</b>perating and <b>L</b>eading <b>D</b>esign is the Doublepicebs Design System for Web.
     </p>
     <p>
       Although COLD was meant and optimised for internal work, it is available for the public; and thus we wanted it to be highly customisable, using CSS variables, without preprocessors, exactly like Shoelace.
     </p>
+    <a href="#doc" class="button" style="width: 100%;"><b>The docs</b></a>
   </div>
   <div class="bg-dark text-light text-center p-lg row" style="--headings-color: white;">
     <h3 class="m-b-lg">Features</h3>
@@ -111,6 +116,13 @@
     <a href="https://doublepicebs.github.io/blog/" class="button button-lg m-t-md" style="width: 100% !important;">Visit</a>
     
   </div>
+  
+  <section id="doc" class="p-lg bg-light text-dark">
+    
+    <h3>The Docs</h3>
+    <p>Unfourtnately the docs are still under development.</p>
+    
+  </section>
   
   <script src="main.js"></script>
 </body>

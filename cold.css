@@ -249,6 +249,12 @@ a.badge:hover {
     border-bottom-color: var(--button-bg-color-secondary);
 }
 
+.button.button-inverted {
+  border-style: solid;
+  border-color: var(--button-bg-color);
+  border-radius: var(--button-button-radius);
+}
+
     .button.button-secondary:hover {
       color: var(--button-color-secondary);
       background-color: var(--button-bg-color-secondary);
@@ -515,6 +521,7 @@ a.badge:hover {
 /* Box sizing reset */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 *,
