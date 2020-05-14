@@ -87,6 +87,7 @@
   
   /* Alerts --- */
   --alert-border-radius: var(--comp-border-radius);
+  --alert-border-width: var(--comp-border-width);
   --alert-padding-x: var(--comp-padding-x);
   --alert-padding-y: var(--comp-padding-y);
    /* Default */
