@@ -1517,6 +1517,7 @@ input[type="range"]:focus {
 .text-light { color: var(--state-light) !important; }
 .text-dark { color: var(--state-dark) !important; }
 .text-white { color: white !important; }
+.text-black { color: var(--black) !important; }
 
 /* Text style */
 .text-small { font-size: var(--font-size-small) !important; }
@@ -1557,6 +1558,7 @@ input[type="range"]:focus {
 .bg-light { background-color: var(--state-light) !important; }
 .bg-dark { background-color: var(--state-dark) !important; }
 .bg-black { background-color: var(--black) !important; }
+.bg-white { background-color: white !important; }
 
 /*Display utilities*/
 
