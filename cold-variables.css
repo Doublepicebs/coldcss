@@ -306,6 +306,13 @@
 
   --label-color: inherit;
   
+  /* Border radii */
+  --border-radius-xs: 1px;
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 6px;
+  --border-radius-xl: 8px;
+  
   /* Progress Bars --- */
   --progress-height: var(--input-height);
   --progress-height-xs: var(--input-height-xs);

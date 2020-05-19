@@ -1538,6 +1538,13 @@ input[type="range"]:focus {
 .text-center { text-align: center !important; }
 .text-justify { text-align: justify !important; }
 
+/* Rounded borders */
+.rounded-xs { border-radius: var(--border-radius-xs); }
+.rounded-sm { border-radius: var(--border-radius-sm); }
+.rounded-md { border-radius: var(--border-radius-md); }
+.rounded-lg { border-radius: var(--border-radius-lg); }
+.rounded-xl { border-radius: var(--border-radius-xl); }
+
 /* Text case */
 .text-lowercase { text-transform: lowercase !important; }
 .text-uppercase { text-transform: uppercase !important; }
