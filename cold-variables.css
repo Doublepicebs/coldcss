@@ -310,8 +310,8 @@
   --border-radius-xs: 2px;
   --border-radius-sm: 4px;
   --border-radius-md: 6px;
-  --border-radius-lg: 8px;
-  --border-radius-xl: 10px;
+  --border-radius-lg: 10px;
+  --border-radius-xl: 14px;
   
   /* Progress Bars --- */
   --progress-height: var(--input-height);
