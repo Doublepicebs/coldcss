@@ -1539,11 +1539,11 @@ input[type="range"]:focus {
 .text-justify { text-align: justify !important; }
 
 /* Rounded borders */
-.rounded-xs { border-radius: var(--border-radius-xs); }
-.rounded-sm { border-radius: var(--border-radius-sm); }
-.rounded-md { border-radius: var(--border-radius-md); }
-.rounded-lg { border-radius: var(--border-radius-lg); }
-.rounded-xl { border-radius: var(--border-radius-xl); }
+.rounded-xs { border-radius: var(--border-radius-xs) !important; }
+.rounded-sm { border-radius: var(--border-radius-sm) !important; }
+.rounded-md { border-radius: var(--border-radius-md) !important; }
+.rounded-lg { border-radius: var(--border-radius-lg) !important; }
+.rounded-xl { border-radius: var(--border-radius-xl) !important; }
 
 /* Text case */
 .text-lowercase { text-transform: lowercase !important; }
