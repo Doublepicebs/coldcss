@@ -146,7 +146,7 @@
   --badge-bg-color-dark: var(--state-dark);
   
   /* Buttons --- */
-    --button-height-xs: var(--input-height-xs);
+  --button-height-xs: var(--input-height-xs);
   --button-height-sm: var(--input-height-sm);
   --button-height: var(--input-height);
   --button-height-lg: var(--input-height-lg);

@@ -13,6 +13,8 @@
   <!-- Fonts -->
   <link href="fonts/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Zepto (like jQuery) -->
+  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/zepto@1.2.0/dist/zepto.min.js"></script>
   <!-- Basic edits to cold -->
   <style type="text/css" media="all">
     body {
@@ -57,7 +59,7 @@
     <p>
       Although COLD was meant and optimised for internal work, it is available for the public; and thus we wanted it to be highly customisable, using CSS variables, without preprocessors, exactly like Shoelace.
     </p>
-    <a href="#doc" class="button" style="width: 100%;"><b>The docs</b></a>
+    <a href="#doc" class="button button-border" style="width: 100%;"><b>The docs</b></a>
   </div>
   <div class="bg-dark text-light text-center p-lg row" style="--headings-color: white;">
     <h3 class="m-b-lg">Features</h3>
@@ -122,6 +124,11 @@
     <h3>The Docs</h3>
     <p>Unfourtnately the docs are still under development.</p>
     
+  </section>
+  
+  <section class="p-md bg-secondary text-light" style="--headings-color: white">
+    <h2 class="fh">News</h2>
+    <p id="news"></p>
   </section>
   
   <script src="main.js"></script>
