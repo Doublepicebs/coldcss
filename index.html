@@ -12,20 +12,21 @@
   <link rel="stylesheet" href="cold.css">
   <!-- Fonts -->
   <link href="fonts/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <!-- Zepto (like jQuery) -->
-  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/zepto@1.2.0/dist/zepto.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Zepto (like jQuery) 
+  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/zepto@1.2.0/dist/zepto.min.js"></script> -->
   <!-- Basic edits to cold -->
   <style type="text/css" media="all">
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     body {
       --button-bg-color: var(--primary-light);
       --button-color: var(--primary);
       --font-size: 1.1rem;
-      --headings-font-family: "Montserrat", sans-serif;
+      --headings-font-family: "Poppins", sans-serif;
       --switch-focus-width: 0;
       --switch-thumb-spacing: 5px;
-      font-family: "Marat Sans Regular", sans-serif;
-      letter-spacing: 0.009rem;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
     }
     
     .button:not(.secondary) {
@@ -33,7 +34,7 @@
     }
 
     .fh {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     .bg-dark svg {
@@ -47,11 +48,11 @@
 </head>
 
 <body>
-  <header style="--state-light: #eeee;" class="bg-light p-xs">
+  <header style="--state-light: #eeee; --headings-color: white;" class=" p-xs fixed w-100 bg-blur-heavy">
     <h3 class="hidden-lg"><span class="text-bold">D<span class="text-primary">D</span>S</span></h3>
     <h3 class="p-xs text-bold hidden-sm hidden-xs">Doublepicebs <span class="text-primary">Design</span> System</h3>
   </header>
-  <div class="m-xs m-t-xl">
+  <div class="p-xs p-t-xxl bg-black text-light" style="--headings-color: white;">
     <h3>What is COLD?</h3>
     <p>
       COLD, stands for <b>C</b>ustomisable, <b>O</b>perating and <b>L</b>eading <b>D</b>esign is the Doublepicebs Design System for Web.
@@ -59,9 +60,11 @@
     <p>
       Although COLD was meant and optimised for internal work, it is available for the public; and thus we wanted it to be highly customisable, using CSS variables, without preprocessors, exactly like Shoelace.
     </p>
-    <a href="#doc" class="button button-border" style="width: 100%;"><b>The docs</b></a>
+    <a href="#doc" class="button button-border w-100"><b>The docs</b></a>
+    <br /><br />
+    <hr>
   </div>
-  <div class="bg-dark text-light text-center p-lg row" style="--headings-color: white;">
+  <div class="bg-black text-light text-center p-lg row" style="--headings-color: white;">
     <h3 class="m-b-lg">Features</h3>
     <div class="col-6">
       <!-- Pencil icon -->
@@ -81,6 +84,7 @@
     <b class="fh">Responsive</b>
     <br />
     <p>Our stylesheets are beautiful, responsive and more importantly, mobile first.</p>
+    <br><br>
   </div>
   <div>
     <div class="bg-black text-light p-lg text-right" style="--headings-color: white;">
@@ -93,7 +97,6 @@
       </p>
     </div>
   </div>
-  
   <div style="background: linear-gradient(135deg, var(--primary), var(--primary-light)); --pre-bg-color: var(--primary-light); --code-bg-color: var(--primary-light);" class="p-xl text-dark">
     
     <h3>Get it from here</h3>
@@ -106,30 +109,40 @@
     <pre><code>&lt;link rel="stylesheet" href="https://doublepicebs.github.io/coldcss/cold-variables.css&gt;</code></pre>
   
   <p>There is also a set of so called recommendations, its a small set of small css variable edits, not passing 25 lines. However, it isn't ready yet.</p>
-  
+  <br />
   </div>
-  
   <div class="p-lg">
     
     <h2 class="text-center text-uppercase m-b-md" style="text-decoration: underline; text-decoration-color: #2979ff; text-decoration-thickness: 1.25rem;">The blog</h2>
     
     <h6>Want to learn about the development, with nice tricks and other non-coding stuff like lifestyle? Visit the blog!</h6>
     
-    <a href="https://doublepicebs.github.io/blog/" class="button button-lg m-t-md" style="width: 100% !important;">Visit</a>
-    
+    <a href="https://doublepicebs.github.io/blog/" class="button button-lg m-t-md w-100">Visit</a>
+    <br>
   </div>
-  
   <section id="doc" class="p-lg bg-light text-dark">
     
     <h3>The Docs</h3>
-    <p>Unfourtnately the docs are still under development.</p>
-    
+    <h5>B E T A</h5>
+    <a href="https://telegra.ph/Doublepicebs-Design-System-COLD-Documentation-05-26"><svg width="12.5px" height="12.5px" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>Check it here</a>
+    <br />
   </section>
   
-  <section class="p-md bg-secondary text-light" style="--headings-color: white">
+  <section class="text-white p-lg" style="background: linear-gradient(-90deg, black 0%, #1f1f1f 99%);" style="--headings-color: white;">
+      
+      <h2 class="text-center" style="background: -webkit-linear-gradient(135deg, rgba(41,121,255,1) 0%, rgba(255,0,0,1) 99%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">THEMES</h2>
+      <p>Awesome no-npm themes using the design system you love.</p>
+      
+      <a href="themes/index.html" class="button text-center w-100 text-white" style="background: linear-gradient(135deg, #2979ff 0%, rgba(255,0,0,1) 99%); border: none; outline: none; box-shadow: none !important;">Check the theme store</a>
+      
+      <img src="https://images.unsplash.com/photo-1479762937580-3b682a10a0d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt="dark" class="w-100 m-t-sm"/>
+      <br />
+  </section>
+  
+  <!--<section class="p-md bg-secondary text-light" style="--headings-color: white">
     <h2 class="fh">News</h2>
     <p id="news"></p>
-  </section>
+  </section>-->
   
   <script src="main.js"></script>
 </body>

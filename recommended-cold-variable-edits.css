@@ -1,4 +1,4 @@
 :root {
---switch-focus-width: 0;
---switch-thumb-spacing: 5px;
+  --switch-focus-width: 0;
+  --switch-thumb-spacing: 5px;
 }

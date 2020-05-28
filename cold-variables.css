@@ -27,6 +27,7 @@
   --black: black;
   --white: white;
   --yellow: #F1ED1E;
+  --grey-light: #eeee;
   --grey: #D4D4D4;
   --grey-medium: #e0e0e0;
   --grey-dark: #3C3D40;
@@ -52,7 +53,7 @@
   --state-danger-light: var(--red-light);
   --state-danger-medium: var(--red-medium);
   --state-danger-dark: var(--red-dark);
-  --state-light: var(--grey);
+  --state-light: var(--grey-light);
   --state-light-medium: var(--grey-medium);
   --state-light-dark: var(--grey-dark);
   --state-dark: var(--dark);
@@ -345,8 +346,8 @@
   --switch-font-size-xl: var(--input-font-size-xl);
   --switch-border-radius: var(--switch-height);
   --switch-thumb-border-radius: 50%;
-  --switch-thumb-spacing: 2px;
-  --switch-focus-width: var(--comp-focus-width);
+  --switch-thumb-spacing: 5px;
+  --switch-focus-width: 0;
   --switch-speed: var(--comp-speed);
   /* Default */
   --switch-color: var(--primary);

@@ -1719,9 +1719,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
   white-space: nowrap !important;
 }
 
-
-/* Background utilities*/
-
+/*Background utilities*/
 .bg-primary {
   background-color: var(--primary) !important;
 }
@@ -1762,8 +1760,17 @@ input[type="range"]:focus::-webkit-slider-thumb {
   background-color: white !important;
 }
 
-/*Display utilities*/
+.bg-blur {
+  background-color: rgba(0,0,0,0.15);
+  backdrop-filter: blur(5px);
+}
 
+.bg-blur-heavy {
+  background-color: rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+}
+
+/*Display utilities*/
 @media (--breakpoint-xs-only) {
   .hide-xs {
     display: none !important;
@@ -2225,6 +2232,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
   padding-top: var(--spacing-xl) !important;
 }
 
+.p-t-xxl {
+  padding-top: calc(var(--spacing-xl) * 2) !important;
+}
+
 .p-r-xl {
   padding-right: var(--spacing-xl) !important;
 }
@@ -2429,4 +2440,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .m-xy-auto {
   margin: auto !important;
+}
+
+/* Other utilites */
+.fixed {
+  position: fixed;
+  z-index: 1;
 }
