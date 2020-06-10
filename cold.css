@@ -1625,6 +1625,11 @@ input[type="range"]:focus::-webkit-slider-thumb {
   color: var(--black) !important;
 }
 
+.text-clip {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
 /* Text style */
 .text-small {
   font-size: var(--font-size-small) !important;

@@ -4,17 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" media="all" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" type="text/css" media="all" />
+    <!-- Ion-icons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- Cold -->
     <link rel="stylesheet" href="../cold-variables.css" type="text/css" media="all" />
     <link rel="stylesheet" href="../cold.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    
     <title>Themes</title>
+    <style>
+      .logo {
+      background: linear-gradient(270deg, #2979ff, #ff0000, #ab00ff);
+       background-size: 600% 600%; 
+      -webkit-animation: logoAnimation 28s ease infinite;
+      -moz-animation: logoAnimation 28s ease infinite;
+      -o-animation: logoAnimation 28s ease infinite;
+      animation: logoAnimation 28s ease infinite;
+      }
+      @-webkit-keyframes logoAnimation {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
+      @-moz-keyframes logoAnimation {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
+      @-o-keyframes logoAnimation {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
+      @keyframes logoAnimation {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+      }
+      body {
+      /*--button-bg-color: var(--primary-light);
+      --button-color: var(--primary);*/
+      --font-size: 1.1rem;
+      --headings-font-family: "Poppins", sans-serif;
+      --switch-focus-width: 0;
+      --switch-thumb-spacing: 5px;
+      --font-family: "Open Sans";
+      font-family: "Open Sans", sans-serif !important;
+      font-size: 15px;
+      }
+      .button:not(.secondary) {
+      font-weight: bold;
+      }
+      .fh {
+      font-family: 'Poppins', sans-serif;
+      }
+      p {
+        font-family: "Open Sans";
+      }
+    </style>
 </head>
-
-<body>
-
+<body class="bg-black text-light p-md" style="--headings-color: white; /*--primary: linear-gradient(135deg, #2979ff 0%, rgba(255,0,0,1) 99%);*/">
+  
+  
+  <h1 class="text-center logo text-clip">THEMES</h1>
+  
+  <br /><br />
+  
+  <h3>Featured</h3>
+  <section style="display: flex" class="p-xs">
+    <div id="featuredComponents">
+      
+        <featured-card name="Dark" desc="The official dark theme" btn="Check" path="themePage.html" passedData="hi" onclick="pass()"></featured-card>
+        
+    </div>
+  </section>
+  
+  
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  
 </body>
-
 </html>
