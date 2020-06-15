@@ -70,7 +70,7 @@
   --comp-padding-y: .5rem;
   --comp-speed: .25s;
   --comp-box-shadow-inner: 0;
-  --comp-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
+  --comp-box-shadow-outer: 0;
   
   /* ------------------- */
   
@@ -270,7 +270,7 @@
   --input-font-weight: inherit;
   --input-color: var(--body-color);
   --input-border-color: var(--comp-border-color);
-  --input-border-width: 1px;
+  --input-border-width: 0;
   --input-border-radius: var(--comp-border-radius);
   --input-bg-color: var(--white);
   --input-box-shadow: var(--comp-box-shadow-inner);
