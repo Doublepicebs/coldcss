@@ -269,8 +269,8 @@
   --input-font-family: inherit;
   --input-font-weight: inherit;
   --input-color: var(--body-color);
-  --input-border-color: var(--comp-border-color);
-  --input-border-width: 0;
+  --input-border-color: transparent;
+  --input-border-width: 1px;
   --input-border-radius: var(--comp-border-radius);
   --input-bg-color: var(--white);
   --input-box-shadow: var(--comp-box-shadow-inner);
