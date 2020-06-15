@@ -69,7 +69,7 @@
   --comp-padding-x: .5rem;
   --comp-padding-y: .5rem;
   --comp-speed: .25s;
-  --comp-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
+  --comp-box-shadow-inner: 0;
   --comp-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
   
   /* ------------------- */
